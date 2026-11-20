@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#0B1020">
+    <LinearLayout android:orientation="vertical" android:padding="18dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/title" android:text="📡 NetMonitor Pro"
+            android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="مراقبة اتصالات الشبكة وتحليل TCP / UDP"
+            android:textColor="#9AA8C7" android:textSize="14sp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="4dp"/>
+
+        <TextView android:id="@+id/status" android:text="● متوقف" android:textColor="#FF5C72"
+            android:textSize="18sp" android:textStyle="bold" android:gravity="center"
+            android:background="#171F36" android:padding="14dp" android:layout_marginTop="14dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/startButton" android:text="🚀 بدء المراقبة"
+            android:textSize="17sp" android:layout_marginTop="12dp" android:backgroundTint="#6C5CE7"
+            android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/stopButton" android:text="⏹ إيقاف المراقبة"
+            android:backgroundTint="#252E46" android:textColor="#FFFFFF"
+            android:layout_width="match_parent" android:layout_height="50dp"/>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:id="@+id/appsButton" android:text="🎮 التطبيقات" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#00A8A8" android:textColor="#FFFFFF"/>
+            <Button android:id="@+id/settingsButton" android:text="⚙ الإعدادات" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#FF8A3D" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <TextView android:id="@+id/selectedInfo" android:text="المصدر: كل التطبيقات"
+            android:textColor="#B9C6E4" android:paddingTop="8dp" android:paddingBottom="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/stats" android:text="🌐 IPs: 0    🔌 Ports: 0    📦 Packets: 0"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold"
+            android:background="#171F36" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/game" android:text="🎮 لم يتم اكتشاف لعبة"
+            android:textColor="#67D9FF" android:textSize="16sp" android:background="#11192D"
+            android:padding="14dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="📋 الاتصالات المكتشفة" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp" android:paddingTop="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/log" android:text="لا توجد اتصالات بعد.\nشغّل المراقبة ثم افتح التطبيق المحدد."
+            android:textColor="#D7E0F5" android:textSize="14sp" android:fontFamily="monospace"
+            android:background="#080D18" android:padding="14dp" android:minHeight="260dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:id="@+id/csvButton" android:text="📤 CSV" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#2E86DE" android:textColor="#FFFFFF"/>
+            <Button android:id="@+id/jsonButton" android:text="📄 JSON" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#8E44AD" android:textColor="#FFFFFF"/>
+            <Button android:id="@+id/clearButton" android:text="🗑 مسح" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#C0392B" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/shareButton" android:text="📤 مشاركة" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#16A085" android:textColor="#FFFFFF"/>
+            <Button android:id="@+id/helpButton" android:text="❓ مساعدة" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp" android:backgroundTint="#34495E" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
